@@ -36,9 +36,11 @@ dotnet test
 ## 使用方式
 
 - 預設讀取 `src/TextConvert/appsettings.json` 的來源與輸出目錄。
-- 命令列參數可覆寫設定:
-  - `--source <目錄>` / `-s <目錄>`:來源目錄。
-  - `--output <目錄>` / `-o <目錄>`:輸出目錄。
+- 命令列參數:
+  - `--source <目錄>` / `-s <目錄>`:覆寫來源目錄。
+  - `--output <目錄>` / `-o <目錄>`:覆寫輸出目錄。
+  - `--help` / `-h` / `-?`:顯示說明後結束。
+  - `--version` / `-v`:顯示版本後結束。
 - 輸出檔採鏡像子目錄結構,檔名保留原副檔名(例:`report.docx` → `report.docx.txt`)。
 
 ## 設定檔(appsettings.json)
@@ -60,9 +62,24 @@ dotnet test
 - `Overwrite`:輸出檔已存在時是否覆寫。
 - 日誌同時輸出到 Console 與 `logs/` 每日滾動檔案,涵蓋 Information / Warning / Error 等級。
 
+## 發布(Publish)
+
+以自封裝單一檔案發布(win-x64,使用者端無需安裝 .NET):
+
+```
+cd src
+dotnet publish TextConvert/TextConvert.csproj -p:PublishProfile=FolderProfile
+```
+
+輸出於 `src/TextConvert/bin/Release/net10.0/publish/win-x64/`,內含
+`TextConvert.exe`、`appsettings.json` 及自動附帶的 `使用者操作說明.md`。
+
+> 發布版執行說明見 [使用者操作說明](docs/guides/使用者操作說明.md)。
+
 ## 文件
 
-完整文件見 [`docs/`](docs/README.md):產品需求(PRD)、系統設計(architecture)、變更紀錄(changelog)。
+完整文件見 [`docs/`](docs/README.md):產品需求(PRD)、系統設計(architecture)、
+使用指南(guides)、變更紀錄(changelog)。
 
 ## 專案結構
 

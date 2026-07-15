@@ -13,6 +13,10 @@
     <None Update="appsettings.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <!-- 使用者操作手冊隨建置/發布輸出附帶(單一來源:docs/guides) -->
+    <None Include="..\..\docs\guides\使用者操作說明.md" Link="使用者操作說明.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
   <ItemGroup>

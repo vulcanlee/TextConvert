@@ -21,6 +21,7 @@ Office(Word、PowerPoint、Excel)、PDF、Markdown、Text、HTML、CSV、JSON、
 |------|----------|
 | [`prd/`](prd/README.md) | 產品需求文件(功能需求、範圍、驗收) |
 | [`architecture/`](architecture/README.md) | 系統架構與設計文件 |
+| [`guides/`](guides/README.md) | 操作與使用教學(含使用者操作手冊) |
 | [`changelog/`](changelog/README.md) | 改版與變更紀錄 |
 | [`prompts/`](prompts/) | 開發過程使用的需求提示詞原稿 |
 
@@ -30,5 +31,6 @@ Office(Word、PowerPoint、Excel)、PDF、Markdown、Text、HTML、CSV、JSON、
 
 - 產品需求:[文字轉換 PRD](prd/文字轉換-prd.md)
 - 系統設計:[文件轉純文字設計](architecture/2026-07-15-文件轉純文字-design.md)
-- 最新變更:[初版建立](changelog/2026-07-15-初版建立.md)
-- 使用說明:[專案 README](../README.md)
+- 使用者操作手冊:[使用者操作說明](guides/使用者操作說明.md)
+- 最新變更:[單一檔案發布修正與 CLI 說明](changelog/2026-07-15-單一檔案發布修正與CLI說明.md)
+- 專案總覽:[專案 README](../README.md)
