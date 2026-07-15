@@ -1,0 +1,14 @@
+# .NET build 產物
+bin/
+obj/
+
+# 執行時期日誌
+logs/
+
+# Visual Studio / Rider
+.vs/
+.idea/
+*.user
+
+# 測試輸出
+[Tt]est[Rr]esults/

@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="TextConvert.Tests/TextConvert.Tests.csproj" />
+  <Project Path="TextConvert/TextConvert.csproj" />
+</Solution>
